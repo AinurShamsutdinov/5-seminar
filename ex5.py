@@ -13,7 +13,7 @@ def int_generator(start, end):
     for item in range(start, end):
         if (item % 3) == 0 and (item % 5) != 0:
             yield 'Fizz'
-        elif (item % 3) == 0 and (item % 5) != 0:
+        elif (item % 3) != 0 and (item % 5) == 0:
             yield 'Buzz'
         elif (item % 3) == 0 and (item % 5) == 0:
             yield 'FizzBuzz'
