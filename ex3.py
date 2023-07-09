@@ -10,18 +10,9 @@ text = 'Самостоятельно сохраните в переменной 
 text_recollected: str = str()
 
 dict_text = {i: ord(i) for i in text}
-dict_comprehensions = [i for i in dict_text.values()]
-for i in dict_comprehensions:
-    text_recollected += chr(i)
-print(f'{text_recollected = }')
-print(f'{dict_text = }')
-
 dict_iterator = iter(dict_text)
-print(next(dict_iterator))
-print(next(dict_iterator))
-print(next(dict_iterator))
-print(next(dict_iterator))
-print(next(dict_iterator))
+for i in range(0, 5):
+    print(next(dict_iterator))
 
 
 
